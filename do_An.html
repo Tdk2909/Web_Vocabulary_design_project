@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="dinhDang\Stylesheet1.css" />
+
+
+    <title></title>
+
+</head>
+<body>
+    <!-- Đây là code jQuery của header -->
+    <!-- khi nộp bài qua gmail. gmail không cho phép gửi file có đuôi .js vì vậy em đã xóa file .js và để code ở đây mong thầy thông cảm -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop()) {
+                    $('header').addClass('Sticky');
+                } else {
+                    $('header').removeClass('Sticky');
+                }
+            });
+        });
+    </script>
+    <!-- Đây là code vùng trên -->
+    <div class="trang1">
+        <div class="xanhduongdam">
+            <div class="nenhoa">
+                <img src="anh\hoa.svg" / class="lop1">
+                <div id="Wrapper">
+                    <header style="z-index:999;">
+                        <div class="inner-header container">
+                            <a href="" class="logo">
+                                <img src="anh\logo.jpn.png" />
+                            </a>
+                            <nav>
+                                <ul id="main-menu">
+                                    <li> <a href=""> <span class="glyphicon glyphicon-th-large">  LEARN </span> </a></li>
+                                    <li> <a href="">  <span class="	glyphicon glyphicon-search">  DICTIONARY </span> </a></li>
+                                    <li> <a href="">  <span class="glyphicon glyphicon-th-list">  VOCABULARY LIST </span> </a></li>
+                                    <li> <a href=""> <span class="glyphicon glyphicon-edit">  TEST PREP </span> </a></li>
+                                    <li class="logininfo"><a class="login" href=""> Log in</a><a class="signup" href="">Sign up </a> </li>
+                                </ul>
+                                <div class="clear"></div>
+
+                            </nav>
+                        </div>
+                    </header>
+                </div>
+                <div class="khungsearch">
+                    <h2> Look up a word, learn it forever.</h2>
+                    <div class="thanhtimkiem">
+                        <img class="nuttimkiem" src="anh\search-bar-icon-bplg1q.svg" />
+                        <input type="search" class="khung" placeholder="start typing to look up a word..." />
+                    </div>
+                    <div class="clear"></div>
+                    <div class="duoikhung">
+                        <ul id="main-menu">
+                            <li> <a href=""> <span class="glyphicon glyphicon-th-large">  Advanced Search </span> </a></li>
+                            <li> <a href=""> <span class="	glyphicon glyphicon-random	">  Random Word </span> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nensong">
+                <div class="container">
+                    <div id="wave-bottom" class="lop2">
+                        <div class="looking-for-nav">
+                            <i class="chulooking"> I am looking for...</i>
+                            <div class="bakhung">
+                                <ul>
+                                    <li id="khung1">
+                                        <a href="#dictionary-for-learning">A <strong>dictionary</strong><br>for learning</a>
+                                    </li>
+
+                                    <li id="khung2">
+                                        <a href="#improve-vocabulary"><span class="sci-fun-long">A scientific and fun way<br>to <strong>improve vocabulary</strong></span></a>
+                                    </li>
+
+                                    <li id="khung3">
+                                        <a href="#teach-words">A better way<br>to <strong>teach words</strong></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Đây là code vùng giữa -->
+    <div class="trang2">
+        <div class="container">
+            <div id="trang2_1">
+                <div class="anhtrai eptrai">
+                    <img src="anh\anhtrai.png" />
+                </div>
+                <div class="foreveryone ">
+                    <div class="label ">
+                        FOR EVERYONE
+                    </div>
+                    <h2> A dictionary for learning</h2>
+                    <p>Whether you’re looking up a specific word or just browsing, you’ll find a universe of friendly explanations and fun activities designed to educate and entertain.</p>
+                    <div class="vungnut">
+                        <a class="nutlearn" href="/dictionary/">Learn more</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div id="trang2_2">
+                <div class="description motnua eptrai">
+                    <div class="label">FOR LEARNERS</div>
+                    <h2>A scientific and fun way to improve vocabulary</h2>
+                    <p>Play games and compete in activities on your own or with participants from around the globe.  With our advanced teaching algorithm and study tools, get ready for your vocabulary to expand!</p>
+                    <a class="nutlearn" href="/signup/learner/">Sign up. It’s free.</a>
+                </div>
+                <div class="anhphai ">
+                    <img src="anh\anhphai.png" width="52%" />
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div id="trang2_3">
+                <div class="anhteach eptrai anhtrai">
+                    <img src="anh\teachword.png" />
+                </div>
+                <div class="description ">
+                    <div class="label">FOR EDUCATORS</div>
+                    <h2>A better way to teach words</h2>
+                    <p>Engage your students with a fast-paced Vocab Jam, assign ready-made word lists for thousands of books and topics, and more!</p>
+                    <a class="nutlearn" href="/signup/teacher/">Start your free trial</a>
+                    <a href="/teaching-resources/" class="chumauxanh"><u>Explore our teaching resources </u></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trang3">
+        <div class="nenxanh">
+            <div class="limited-width">
+                <h2>Success Stories</h2>
+                <p>Teachers and learners are doing amazing things with Vocabulary.com</p>
+                <div class="row ">
+                    <div class="ba_anh">
+                        <div class=" col-md-4 ">
+                            <div class="dongkhunganh">
+                                <div class="giua">
+                                    <img src="anh\student-1erev1y.png" />
+                                </div>
+                                <blockquote>I took the PSAT on Wednesday and the vocabulary section was a breeze. Keep doing what you do, your website has helped me so much!</blockquote>
+
+                                <div class="chuloaction">
+                                    <span>
+                                        — High school student,<br />
+                                        Lewistown, PA
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="anh_2 dongkhunganh">
+                                <div class="giua">
+                                    <img src="anh\principal-1a231e.png" />
+                                </div>
+                                <blockquote> I see enhancing the vocabulary of students as essential in this knowledge-based economy.</blockquote>
+                                <div class="chuloaction">
+                                    <span>
+                                        — Middle school principal,<br />
+                                        Adelphi, MD
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="anh_3 dongkhunganh">
+                                <div class="giua">
+                                    <img src="anh\teacher-qwqtuw.png" />
+                                </div>
+
+                                <blockquote> Vocabulary.com tells me on my teacher dashboard which words my students are struggling with, so I can spend an extra minute in class reviewing those.</blockquote>
+
+                                <div class="chuloaction">
+                                    <span>
+                                        — High school science teacher,<br />
+                                        Broward, FL
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="seemore giua">
+                            <a href="/membership/success-stories/" class="nutseemore  ">See more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trang4">
+        <div class="anh">
+            <div class="nd_4 lop3 giua ">
+                <div class="nutvachu">
+                    <div class="put label ">
+                        Put your school on the map
+                    </div>
+                    <div class="chujoin">
+                        <h2> Join the Vocabulary Bowl</h2>
+                    </div>
+                </div>
+                <div class="dt">
+                    <div class="nutget buttom giua">
+                        Get involved
+                    </div>
+                    <div class="chutrai_4">
+                        <div class="chu_4_tren">
+                            344,645,634
+                        </div>
+                        <div class="chu_4_duoi">
+                            Words mastered
+                        </div>
+                    </div>
+                    <div class="chuphai_4">
+                        <div class="chu_4_tren">
+                            1,843,703
+                        </div>
+                        <div class="chu_4_duoi">
+                            Jams played
+                        </div>
+                    </div>
+                    <div class="chuduoi_4">
+                        <div class="chu_4_tren">
+                            7,159,327,452
+                        </div>
+                        <div class="chu_4_duoi">
+                            Questions answered
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bottom-main ">
+                    <h2 class="chusign_up">Sign up now (it’s free!)</h2>
+                    <p class="motnua">Whether you’re a teacher or a learner, Vocabulary.com can put you or your class on  <br />the path to systematic vocabulary improvement.</p>
+                    <div class="nutget top buttom giua">
+                        Get started
+                    </div>
+                </div>
+                
+            </div>
+            <div class="anhcuoi  ">
+                <img src="anh\anhd.png" width="100%" />
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- Đây là code vùng dưới(footer) -->
+    <div class="footer">
+        <div class="limited-width">
+            <div class="row">
+                <div class="col2-2">
+                    <h3><a href="#">For Everyone </a> </h3>
+                    <ul>
+                        <li><a href="/play/">Play the Challenge</a></li>
+                        <li><a href="/lists/">Vocabulary Lists</a></li>
+                        <li><a href="/dictionary/">Dictionary</a></li>
+                        <li><a href="/articles/chooseyourwords/">Commonly Confused Words</a></li>
+                        <li><a href="/jam/">Join a Vocabulary Jam</a></li>
+                        <li><a href="/test-prep/">Test Prep</a></li>
+                        <li><a href="/word-of-the-day/">Word of the Day</a></li>
+                        <li>&nbsp;</li>
+                    </ul>
+                </div>
+                <div class="col2 ">
+                    <h3><a href="/membership/">For Educators</a></h3>
+                    <ul>
+                        <li><a href="/membership/">Classroom &amp; Site License</a></li>
+                        <li><a href="/membership/teachers/">Pricing</a></li>
+                        <li><a href="/membership/quote/">Contact Sales</a></li>
+                        <li><a href="/membership/success-stories/">Success Stories</a></li>
+                        <li><a href="/teaching-resources/">Teaching Resources</a></li>
+                        <li><a href="/professional-development/">Professional Development</a></li>
+                        <li><a href="/membership/research/">Research</a></li>
+                    </ul>
+                </div>
+                <div class="col2 ">
+                    <h3><a href="/help/">Help</a></h3>
+                    <ul>
+                        <li><a href="/help/">Help Articles / FAQ</a></li>
+                        <li><a href="/help/videos/">How-to Videos</a></li>
+                        <li><a href="/help/webinars">Webinars</a></li>
+                        <li><a href="/help/contactus">Contact Support</a></li>
+                        <li><a href="/privacy/">Privacy Policy</a></li>
+                        <li><a href="/terms/">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col2 ">
+                    <h3><a href="/leaderboards/thisweek/">Leaderboards</a></h3>
+                    <ul>
+                        <li><a href="/bowl/">Vocabulary Bowl</a></li>
+                        <li><a href="/leaderboards/bowl/">Bowl Leaders</a></li>
+                        <li><a href="/leaderboards/today/">Today's Leaders</a></li>
+                        <li><a href="/leaderboards/thisweek/">Weekly Leaders</a></li>
+                        <li><a href="/leaderboards/thismonth/">Monthly Leaders</a></li>
+                        <li>&nbsp;</li>
+                    </ul>
+                </div>
+                <div class="col2 ">
+                    <h3><a href="/blog/">Connect</a></h3>
+                    <ul>
+                        <li><a href="/blog/">Vocabulary.com Blog</a></li>
+                        <li><a href="/about/news/">News &amp; Events</a></li>
+                        <li><a href="https://www.ixl.com/feedback/vocabularydotcom">Tell us what you think</a></li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                    </ul>
+                </div>
+                <div class="col2-1">
+                    <h3><a href="/about/">Our Story</a></h3>
+                    <ul>
+                        <li><a href="/about/">Our Mission</a></li>
+                        <li><a href="/about/team/">Team / Jobs</a></li>
+                        <li><a href="/about/partnerships/">Partnerships</a></li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    
